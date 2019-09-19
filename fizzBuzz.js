@@ -9,8 +9,10 @@ both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only tho
 
 const loopAmount = 100;
 
-for(cnt = 1; cnt <= loopAmount; cnt ++) {
-    if (cnt % 3 == 0) {
+for (cnt = 1; cnt <= loopAmount; cnt++) {
+    if (cnt % 3 == 0 && cnt % 5 == 0) {
+        console.log("FizzBuzz");
+    } else if (cnt % 3 == 0) {
         console.log("Fizz");
     } else if (cnt % 5 == 0) {
         console.log("Buzz");
